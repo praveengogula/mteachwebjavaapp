@@ -34,7 +34,7 @@
 
             Connection con = null;
 
-            con = DriverManager.getConnection("jdbc:mysql://localhost:3306/mteachdb", "root", "root");
+            con = DriverManager.getConnection("jdbc:mysql://ap-cdbr-azure-east-c.cloudapp.net:3306/mteachdbcloud", "b9d02bea3a2c2f", "2f105eda");
 
 
             String a1 = request.getParameter("q1");
