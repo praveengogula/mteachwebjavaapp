@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+        <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+
+</head>
+
+<script language="javascript">
+
+<!--These are functions for validating topics check boxes.. -->
+
+function t1validate(){
+			document.getElementById("t1").checked = true;
+}
+function t2validate(){
+			document.getElementById("t2").checked = true;
+}
+function t3validate(){
+			document.getElementById("t3").checked = true;
+}
+function t4validate(){
+			document.getElementById("t4").checked = true;
+}
+function t5validate(){
+			document.getElementById("t5").checked = true;
+}
+
+<!--These are functions for validating video check boxes.. -->
+function v1validate(){
+			document.getElementById("v1").checked = true;
+}
+function v2validate(){
+			document.getElementById("v2").checked = true;
+}
+function v3validate(){
+			document.getElementById("v3").checked = true;
+}
+function v4validate(){
+			document.getElementById("v4").checked = true;
+}
+function v5validate(){
+			document.getElementById("v5").checked = true;
+}
+
+
+</script>
+
+<body bgcolor="Silver" onLoad="document.form1.reset();">
+    <div class="container">
+
+            <div class="jumbotron">
+
+<form name="form1" onsubmit="return t1validate()">
+
+<center><h1>Node.js Tutorial</h1></center>
+<hr color="black">
+
+<!--Explainis ablut the Introduction-->
+<h3><b>Introduction</b></h3><br>
+
+<p>
+Node.js is a server-side platform built on Google Chrome's JavaScript Engine (V8 Engine). Node.js was developed by Ryan Dahl in 2009 and its latest version is v0.10.36. Node.js is an open source, cross-platform runtime environment for developing server-side and networking applications.
+</p>
+<p>
+Node.js applications are written in JavaScript, and can be run within the Node.js runtime on OS X, Microsoft Windows, and Linux. 
+Node.js also provides a rich library of various JavaScript modules which simplifies the development of web applications using Node.js to a great extent. 
+</p><br><br>
+<!--Explainis ablut the topics-->
+<h3><b>Topics</b></h3><br>
+<p>The List of topics in this E-Learning site.</p>
+
+<ul>
+<li><a href="Text1.html" target="_blank" onclick="return t1validate();"> Node.js Beginners- Introduction</a> <input type="checkbox" name="topic1" value="true" id="t1"></li>
+<li><a href="Text2.html" target="_blank" onclick="return t2validate();"> Node.js Environment Setup</a><input type="checkbox" name="topic2" value="true" id="t2"></a></li>
+<li><a href="Text3.html" target="_blank" onclick="return t3validate();"> Node.js First Application</a><input type="checkbox" name="topic3" value="true" id="t3"></a></li>
+
+</ul>
+
+<!--List of the available videos-->
+<h3><b>Videos</b></h3><br>
+<p>The List of the videos are below.</p>
+
+
+<ul>
+<li><a href="Video1.html" target="_blank" onclick="return v1validate();">Node.js Beginners- Basic Concepts</a><input type="checkbox" name="video1" value="true" id="v1"></li>
+<li><a href="Video2.html" target="_blank" onclick="return v2validate();">Installation of Node.js in windows</a><input type="checkbox" name="video2" value="true" id="v2"></li>
+<li><a href="Video3.html" target="_blank" onclick="return v3validate();">Installation of Node.js in Mac</a><input type="checkbox" name="video3" value="true" id="v3"></li>
+<li><a href="Video4.html" target="_blank" onclick="return v4validate();">Creating Basic Server in Node.js</a><input type="checkbox" name="video4" value="true" id="v4"></li>
+<li><a href="Video5.html" target="_blank" onclick="return v5validate();">Node.js Beginners- Modules</a><input type="checkbox" name="video5" value="true" id="v5"></li>
+</ul>
+</form>
+<h4> <a href="Exam.html">Practice Tests</a></h4>
+<button type="button" autofocus onclick="alert('Are you ready for Test!')">Take Test</button>
+</div>
+    </div>
+
+
+
+<br> <br>
+ <footer class="container-fluid text-center"> 
+            <p><span class="glyphicon glyphicon-copyright-mark"></span> 2016 Miracle Software Systems,Inc</p>
+        </footer>
+
+</body>
+</html>
