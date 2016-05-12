@@ -12,7 +12,7 @@
     String Password = request.getParameter("Password");
     Class.forName("com.ibm.db2.jcc.DB2Driver");
     // out.println("driver is loaded");
-    Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/mteachdb", "root", "root");
+    Connection con = DriverManager.getConnection("jdbc:mysql://ap-cdbr-azure-east-c.cloudapp.net:3306/mteachdbcloud", "b9d02bea3a2c2f", "2f105eda");
     //out.println("connection established");
     //System.out.println(Email);
     try {
